@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffcfc;
+}
+
+
+header {
+    background-color: #4a4e69;
+    color: rgb(248, 247, 247);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 20px; /* Aumenta o preenchimento superior e inferior */
+    min-height: 100px; /* Define uma altura mínima para o cabeçalho */
+}
+
+header {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: space-between; /* Distribui o espaço entre o título e a navegação */
+    padding: 0 20px; /* Adiciona preenchimento nas laterais do cabeçalho */
+}
+
+h2, h3, h4, h5, h6, h7 {
+    font-family: 'Arial', sans-serif; /* Sua fonte desejada */
+    color: #080808; /* A cor que você deseja para os títulos */
+    font-size: 24px; /* O tamanho da fonte para os títulos */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 0; /* Remove qualquer margem padrão */
+    font-size: 24px; /* Ajuste o tamanho da fonte conforme necessário */
+    flex-grow: 1;
+}
+
+p {
+    color: #020202; /* Cor lilás */
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Espaço entre os itens da navegação */
+    margin: 0; /* Remove margem padrão */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px; /* Ajuste o preenchimento conforme necessário */
+    display: block; /* Faz com que o preenchimento aplique corretamente */
+}
+
+nav a:hover {
+
+    color: #a4e7b3;
+}
+
+main {
+    margin: 20px;
+    min-height: 80vh; /* 80% da altura da janela de visualização */
+    margin-bottom: 80px;
+}
+
+footer {
+    background-color: #22223b; /* Exemplo de cor de fundo */
+    color: white;
+    text-align: center;
+    padding: 1em 0; /* Ajuste o preenchimento conforme necessário */
+    width: 100%;
+}
+
+
+img {
+    width: 300px; /* dimensão */
+    height: 300px; /* tornar a imagem quadrada */
+    object-fit: cover; /* manter a proporção da imagem ao redimensionar */
+    border-radius: 8px; /* cantos arredondados se desejado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* sombra sutil */
+    margin: 10px; /* espaço ao redor da imagem */
+    transition: transform 0.3s ease; /* animação suave para o efeito de pairar */
+}
+
+img:hover {
+    transform: scale(1.05); /* aumenta ligeiramente a imagem ao passar o mouse */
+}
+
+.image-text-wrapper {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o texto com a imagem */
+    gap: 100px; /* Adiciona um espaço entre a imagem e o texto */
+    justify-content: center;
+}
+
+.bio-image {
+    max-width: 50%; /* Limita o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    
+}
+
+.text-wrapper {
+    max-width: 50%;
+}
+
+/* Estilos adicionais para garantir que o layout seja responsivo */
+@media (max-width: 768px) {
+    .image-text-wrapper {
+        flex-direction: column; /* Empilha a imagem e o texto em telas menores */
+    }
+
+    .bio-image, .text-wrapper {
+        max-width: 100%;
+    }
+}
+
+li {
+    margin-bottom: 15px; /* Adiciona espaço abaixo de cada item da lista */
+}
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
