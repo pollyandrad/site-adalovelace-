@@ -13,7 +13,7 @@ header {
     align-items: center;
     justify-content: flex-start;
     padding: 20px 20px; /* Aumenta o preenchimento superior e inferior */
-    min-height: 100px; /* Define uma altura mínima para o cabeçalho */
+    min-height: 150px; /* Define uma altura mínima para o cabeçalho */
 }
 
 header {
@@ -23,31 +23,47 @@ header {
     padding: 0 20px; /* Adiciona preenchimento nas laterais do cabeçalho */
 }
 
-h2, h3, h4, h5, h6, h7 {
-    font-family: 'Arial', sans-serif; /* Sua fonte desejada */
-    color: #080808; /* A cor que você deseja para os títulos */
-    font-size: 24px; /* O tamanho da fonte para os títulos */
+h1 {
+
+    font-size: 28px;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Arial', sans-serif; 
+    color: #080808; 
+    font-size: 24px; 
     margin-top: 20px;
     margin-bottom: 10px;
+    padding: 0 20px;
 }
 
 header h1 {
     margin: 0; /* Remove qualquer margem padrão */
     font-size: 24px; /* Ajuste o tamanho da fonte conforme necessário */
     flex-grow: 1;
+    padding: 0 20px;
 }
 
 p {
-    color: #020202; /* Cor lilás */
+    color: #020202; 
+    line-height: 1.5; 
+    padding: 0 20px;
 }
 
+footer p {
+    color: #ffffff; 
+    line-height: 1.5; 
+    padding: 0 20px;
+    justify-content: center;
+}
 
-nav ul {
+ nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     gap: 20px; /* Espaço entre os itens da navegação */
-    margin: 0; /* Remove margem padrão */
+    margin: 0; 
+
 }
 
 nav ul li {
@@ -58,7 +74,7 @@ nav ul li {
 nav a {
     text-decoration: none;
     color: white;
-    padding: 5px 10px; /* Ajuste o preenchimento conforme necessário */
+    padding: 5px 10px; 
     display: block; /* Faz com que o preenchimento aplique corretamente */
 }
 
@@ -74,22 +90,23 @@ main {
 }
 
 footer {
-    background-color: #22223b; /* Exemplo de cor de fundo */
+    background-color: #22223b; 
     color: white;
     text-align: center;
-    padding: 1em 0; /* Ajuste o preenchimento conforme necessário */
+    padding: 1em 0; 
     width: 100%;
 }
 
 
 img {
-    width: 300px; /* dimensão */
-    height: 300px; /* tornar a imagem quadrada */
+    width: 30%; /* dimensão */
+    height: auto; /* tornar a imagem quadrada */
     object-fit: cover; /* manter a proporção da imagem ao redimensionar */
-    border-radius: 8px; /* cantos arredondados se desejado */
+    border-radius: 8px; /* cantos arredondados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* sombra sutil */
     margin: 10px; /* espaço ao redor da imagem */
     transition: transform 0.3s ease; /* animação suave para o efeito de pairar */
+    flex-wrap: wrap;
 }
 
 img:hover {
@@ -99,13 +116,16 @@ img:hover {
 .image-text-wrapper {
     display: flex;
     align-items: center; /* Centraliza verticalmente o texto com a imagem */
-    gap: 100px; /* Adiciona um espaço entre a imagem e o texto */
+    gap: 5%; /* Adiciona um espaço entre a imagem e o texto */
     justify-content: center;
+    flex-wrap: wrap;
+
 }
 
 .bio-image {
     max-width: 50%; /* Limita o tamanho da imagem */
     height: auto; /* Mantém a proporção da imagem */
+    flex: 1 1 300px;
     
 }
 
@@ -132,5 +152,33 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
 }
 
+footer {
+    background-color: #4a4e69;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    display: grid;
+    justify-content: center; /* Centraliza o conteúdo */
+
+}
+
+.footer-cool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px; /* Largura máxima para o conteúdo do rodapé */
+    width: 100%; /* Adapta-se à largura disponível */
+    
+}
+
+#footer_social_media {
+    display: flex;
+    justify-content: center;
+    gap: 3rem; /* Aumenta o espaço entre os ícones */
+    
+}
